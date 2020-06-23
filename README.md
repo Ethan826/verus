@@ -1,8 +1,8 @@
 # Verus
 
 Verus is a proof-of-concept for using the same validation code on the front
-end backend of a web application. It uses Rust compiled to web assembly on
-the frontend, and Ruby's FFI library to bind to a dynamic library also
+end and backend of a web application. It uses Rust compiled to web assembly
+on the frontend, and Ruby's FFI library to bind to a dynamic library also
 compiled from the Rust code.
 
 ## Installation
