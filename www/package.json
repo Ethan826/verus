@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/rustwasm/create-wasm-app#readme",
   "dependencies": {
-    "verus-wasm": "file:../verus-wasm/pkg"
+    "verus-wasm": "file:./pkg"
   },
   "devDependencies": {
     "webpack": "^4.29.3",

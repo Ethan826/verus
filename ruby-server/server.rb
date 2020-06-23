@@ -5,6 +5,7 @@ require "verus-gem"
 
 set :allow_origin, "*"
 set :allow_methods, "POST"
+set :bind, "0.0.0.0"
 
 before do
   content_type :json
