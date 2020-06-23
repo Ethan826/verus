@@ -10,5 +10,9 @@ edition = "2018"
 verus-validations = { path = "../verus-validations" }
 libc = "0.2.71"
 
+[target.x86_64-apple-darwin]
+linker = "x86_64-apple-darwin14-clang"
+ar = "x86_64-apple-darwin14-ar"
+
 [lib]
-crate-type = ["cdylib", "rlib"]
+crate-type = ["dylib", "rlib"]
