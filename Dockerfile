@@ -26,7 +26,10 @@ COPY ruby-server ruby-server
 COPY verus-gem verus-gem
 
 COPY --from=builder verus/verus-ruby-wrappers/target/release/libverus_ruby_wrappers.so verus-gem/bin/
+COPY --from=builder verus/verus-wasm/pkg pkg/
+
 WORKDIR /verus/ruby-server
+
 RUN gem install bundler
 RUN bundle
 
