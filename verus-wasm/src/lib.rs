@@ -1,6 +1,7 @@
 mod utils;
 
 use wasm_bindgen::prelude::*;
+use verus_validations::doubler;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -15,5 +16,5 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet() {
-    alert("Hello, verus-wasm!");
+    alert(&doubler(3).to_string());
 }
