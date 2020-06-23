@@ -2,8 +2,7 @@ use libc::c_char;
 use std::ffi::CStr;
 
 #[no_mangle]
-#[link_name = "validate_email"]
-pub extern fn validate_email_c_string(raw_email: *const c_char) -> bool {
+pub extern fn email(raw_email: *const c_char) -> bool {
     let c_str = unsafe {
         assert!(!raw_email.is_null());
 
@@ -15,8 +14,7 @@ pub extern fn validate_email_c_string(raw_email: *const c_char) -> bool {
 }
 
 #[no_mangle]
-#[link_name = "validate_date"]
-pub extern fn validate_date_c_string(raw_date: *const c_char) -> bool {
+pub extern fn date(raw_date: *const c_char) -> bool {
     let c_str = unsafe {
         assert!(!raw_date.is_null());
 
