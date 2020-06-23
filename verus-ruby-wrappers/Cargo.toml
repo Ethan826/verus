@@ -1,15 +1,14 @@
 [package]
-name = "verus-validations"
+name = "verus-ruby-wrappers"
 version = "0.1.0"
 authors = ["Ethan Kent <ekent@jd11.law.harvard.edu>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-[lib]
-crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-chrono = "0.4.11"
-lazy_static = "1.4.0"
+verus-validations = { path = "../verus-validations" }
 libc = "0.2.71"
-regex = "1.3.9"
+
+[lib]
+crate-type = ["cdylib", "rlib"]

@@ -1,0 +1,19 @@
+PATH
+  remote: ../verus-gem
+  specs:
+    verus-gem (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.13.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ffi (~> 1.9, >= 1.9.10)!
+  verus-gem!
+
+BUNDLED WITH
+   2.1.4

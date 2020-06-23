@@ -1,0 +1,4 @@
+source "https://rubygems.org" do
+  gem "verus-gem", path: "../verus-gem"
+  gem "ffi", "~> 1.9", ">= 1.9.10"
+end
